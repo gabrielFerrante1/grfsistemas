@@ -1,0 +1,23 @@
+
+.alertPlanFree > h5 {
+    color: var(--primary);
+}
+
+.alertPlanFree > h5 > span{
+    color: var(--secondary300);
+    text-transform: lowercase;
+}
+
+.alertPlanFree > p {
+    color: var(--colorText300);
+    margin-bottom: 11px;
+}
+
+.alertPlanFreeCloseIcon {
+    float: right;
+    margin: 5px; 
+}
+
+.alertPlanFreeCloseIcon >  path {
+    stroke: var(--colorText);
+}

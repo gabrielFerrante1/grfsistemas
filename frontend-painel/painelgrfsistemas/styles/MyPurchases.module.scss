@@ -1,0 +1,25 @@
+@import '../styles/mixins.scss';
+
+.containerPage {
+    @include container-page;
+}
+
+.tituloPage {
+    color: var(--primary);
+}
+
+.tablePurchases { 
+    & > thead { 
+        border-bottom: 1px solid var(--colorOpacity); 
+     
+    }
+}
+
+.purchasesReceipt {
+    border: 1px solid var(--colorText300);
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 11.7px;
+    padding: 2.5px 12px;
+}
+

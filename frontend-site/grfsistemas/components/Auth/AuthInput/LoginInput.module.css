@@ -1,0 +1,27 @@
+.appDiv > label {
+    display: block;
+    font-weight: 600;
+    color: var(--primary);
+    margin-top: 15px;
+}
+
+.appDiv > input {
+    width: 100%; 
+    padding: 7px 11px;
+    margin-top: 3px;
+    border: 1px solid var(--colorLineVerticalNavBar);
+    background: transparent;
+    outline: none;
+    color: var(--colorText300);
+    transition: all 0.4s;
+    font-size: 16px;
+}
+
+.appDiv > input:focus {
+    border-color: var(--primary);
+    color: var(--colorText);
+}
+
+.errorInput {
+    border-color: red !important;
+}

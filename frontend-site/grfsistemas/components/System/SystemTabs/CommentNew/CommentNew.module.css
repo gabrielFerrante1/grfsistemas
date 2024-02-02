@@ -1,0 +1,53 @@
+.appNewComment {
+    display: flex;
+    flex-direction: column; 
+}
+
+.appNewCommentBody  {
+    outline: none;
+    border: 1px solid var(--primary);
+    resize: none;
+    padding: 3px 10px;
+    background: var(--background);
+    color: var(--colorText300);
+    transition: all 0.4s;
+    margin: 11px 0;
+}
+
+.appNewCommentBody::placeholder {
+    color: var(--gray)
+}
+
+.appNewCommentBody:focus {
+    border-color: var(--secondary600);
+    color: var(--colorText);
+}
+
+.appNewCommentBtnDisbaled {
+    opacity: 0.7;
+    width: 10em;
+    border: 1px solid var(--secondary);
+    background: var(--primary);
+    color: var(--secondary);
+    margin-top: 12px;
+    padding: 4px 5px;
+    font-size: 14px;  
+}
+
+
+.appNewCommentBtn {
+    width: 10em;
+    border: 1px solid var(--secondary);
+    background: var(--primary);
+    color: var(--secondary);
+    margin-top: 12px;
+    padding: 4.5px 5px;
+    font-size: 14px;
+    transition: all 0.3s;
+}
+
+.appNewCommentBtn:hover {
+    background: var(--secondary);
+    color: var(--primary);
+    border-color: var(--primary);
+}

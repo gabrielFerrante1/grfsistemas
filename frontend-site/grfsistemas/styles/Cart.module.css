@@ -1,0 +1,30 @@
+.cartApp {
+    background: var(--background100);
+    max-width: 1630px;
+    transition: all 0.4s;
+}    
+
+.cartAppViewPage {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-bottom: 130px;
+}
+
+.cartAppReviewCart { 
+    background: var(--background);
+    padding: 0; 
+}
+
+.loadingCart   {
+    background-color: rgba(147, 43, 245, 0.307); 
+}
+
+.loadingCart > span {
+    background: var(--primary);
+}
+
+@media (min-width: 1630px) {
+    .cartApp {
+        background: var(--background);
+    }
+}

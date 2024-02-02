@@ -1,0 +1,61 @@
+.arrowRightCarousel  {
+    color: var(--colorText);
+    position: absolute;
+    bottom: 50%;
+    right: 10px; 
+    transition: all 0.4s;
+    border-radius: 20px;
+    cursor: pointer;
+    padding: 1px;
+} 
+
+.arrowLeftCarousel  {
+    color: var(--colorText);
+    position: absolute;
+    bottom: 50%;
+    left: 10px; 
+    transition: all 0.4s;
+    border-radius: 20px;
+    cursor: pointer;
+    z-index: 100;
+}
+
+.carouselDivImg {
+    height: 350px;
+    cursor: grab;
+}
+
+.carouselDivImg > img {
+    width: 100%;
+    height: 100%;
+}
+
+
+@media (min-width: 989px) { 
+    .carousel:hover .arrowRightCarousel {
+        right: -28px;
+        background: var(--background100);
+    }
+
+    .carousel:hover .arrowLeftCarousel {
+        left: -28px;
+        background: var(--background100);
+    }
+ 
+    .arrowRightCarousel:hover,
+    .arrowLeftCarousel:hover {
+        background: var(--secondary300) !important;
+        color: var(--primary);
+    } 
+}
+
+
+
+@media (max-width: 989px) { 
+    .carousel:hover .arrowRightCarousel,
+    .carousel:hover .arrowLeftCarousel { 
+        background: var(--secondary300);
+        color: var(--primary);
+    }  
+}
+

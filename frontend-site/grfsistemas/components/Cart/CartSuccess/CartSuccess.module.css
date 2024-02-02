@@ -1,0 +1,28 @@
+#purchaseSuccess {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin: 24px 0px;
+    min-height: 320px;
+}
+
+.iconTrophy {
+    font-size: 75px;
+    color: rgb(3, 200, 3);
+}
+
+.titleSuccess {
+    margin-top: 14px; 
+    color: var(--colorText300);
+}
+
+.titleDescriptionSuccess {
+    margin-top: 4px;
+    text-align: center;
+    color: var(--gray);
+}
+
+.btnGoToPainel {
+    margin-top: 35px;
+}

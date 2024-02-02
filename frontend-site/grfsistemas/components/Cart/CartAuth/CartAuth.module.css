@@ -1,0 +1,118 @@
+.title { 
+    color: var(--primary);
+    font-weight: 700;
+    margin-bottom: 0px;
+    margin-top: 10px;
+}
+
+.titleDescription {
+    display: block;
+    margin-bottom: 20px;
+    color: var(--colorText300);
+}
+
+.accountLoading {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 240px
+}
+
+.card {
+    background: var(--background);
+    border: 1px solid var(--grayLight);
+}
+ 
+.cardAccountInfo { 
+    padding: 11px 13px; 
+    padding-bottom: 11px; 
+    display: flex;
+    transition: all 0.3s; 
+    cursor: pointer;
+    border-bottom: 1px solid var(--grayLight);
+}
+
+.accountInfoUser {
+    display: flex;
+    flex-direction: column;
+    margin-left: 7px; 
+    max-width: 80%; 
+    align-self: center;
+}
+
+.cardAccountInfo:hover {
+    background: rgba(180, 181, 204, 0.122);  
+}
+
+.cardAccountInfoSelected {
+    background: rgba(180, 181, 204, 0.122);  
+}
+
+.accountInfoUserName {
+    display: block;
+    margin: -3.5px 0 -4.9px 0;
+    color: var(--colorText300);
+    font-size: 15px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis; 
+}
+
+.accountInfoUserEmail {
+    display: block;
+    color: var(--gray);
+    font-size: 13px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.otherAccountIcon {
+    margin-left: 3.5px;
+    font-size: 28px;
+    color: var(--colorText300); 
+}
+
+.otherAccountText {
+    margin-left: 3.5px;
+    color: var(--colorText300); 
+    font-size: 14.7px;
+    align-self: center;
+}
+
+.btnNextStep {
+    background: var(--primary);
+    float: right;
+    margin-top: 20px; 
+    padding: 5px 20px;
+    color: var(--secondary);
+    transition: all 0.4s;
+    border: none;
+}
+
+.btnNextStep:hover {
+    background: var(--secondary300);
+    color: var(--primary);
+}
+
+.btnNextStepDisabled { 
+    opacity: 0.5;
+    background: var(--primary);
+    float: right;
+    margin-top: 20px; 
+    padding: 5px 20px;
+    color: var(--secondary);
+    transition: all 0.4s;
+    border: none; 
+}
+ 
+
+@media (max-width: 888px) {
+    .authHeader {
+        padding: 12px 5px;
+    }
+
+    .accountInfoUserName {
+        max-width: 50%;
+    }
+}

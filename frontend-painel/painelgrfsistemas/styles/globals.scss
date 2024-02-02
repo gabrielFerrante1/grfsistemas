@@ -1,0 +1,51 @@
+body {
+  user-select: none;
+}
+
+.dark, .light {
+  transition: all 0.5s; 
+}
+ 
+.dark {
+  background-color: var(--background);
+}
+
+.light {
+  background-color: rgb(249, 249, 249);
+}
+
+.dark { 
+  --primary: rgb(161, 59, 230);
+  --secondary: aqua;
+  --secondary300: rgb(4, 230, 211);
+  --secondary600: rgb(9, 199, 224);
+  --secondary800: rgb(2, 181, 205);
+  --colorOpacity: rgb(110, 110, 110);
+  --colorText: rgb(255, 255, 255);
+  --colorText300: rgb(203, 203, 203);
+  --colorText600: rgb(235, 235, 235);
+  --backgroundNav: rgb(58, 58, 58);
+  --background: rgb(74, 74, 74);
+  --background100: rgb(58, 58, 58);
+  --gray: rgb(201, 199, 199);
+  --gray100: rgb(150, 150, 150); 
+  --gray300: rgb(150, 149, 149); 
+}
+
+.light { 
+  --primary: blueviolet;
+  --secondary: aqua;
+  --secondary300: rgb(4, 230, 211);
+  --secondary600: rgb(9, 199, 224);
+  --secondary800: rgb(2, 181, 205);
+  --colorOpacity: rgb(234, 234, 234);
+  --colorText: rgb(20, 20, 20);
+  --colorText300: rgb(68, 68, 68);
+  --colorText600: rgb(58, 58, 58);
+  --backgroundNav: white;
+  --background: rgb(251, 251, 251);
+  --background100: rgba(238, 236, 236, 0.807); 
+  --gray: rgb(153, 152, 152);
+  --gray100: rgb(114, 114, 114);
+  --gray300: rgb(103, 103, 103);
+}

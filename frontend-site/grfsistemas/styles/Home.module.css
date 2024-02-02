@@ -1,0 +1,89 @@
+.sectionContent {
+  margin-top: 17em;
+  padding: 0 10px;
+}
+
+.titleSection {
+  color: var(--secondary300);
+  font-size: 2.5rem;
+  text-align: center;
+  transition: all 0.4s;
+}
+
+.titleSection > span {
+  color: var(--primary);
+  font-weight: bold;
+  text-transform: lowercase;
+}
+
+.textSection {
+  font-size: 14.5px;
+  font-weight: 500;
+  text-align:center;
+  margin-top: 15px;
+  color: var(--colorText600);
+}
+
+.btnSection {
+  border: none;
+  background-color: var(--secondary);
+  padding: 11px;
+  border-radius: 29px;
+  font-weight: 500;
+  transition: all 1s;
+  -webkit-transition: all 0.9s;
+  -moz-transition: all 0.9s;
+  -o-transition: all 0.9s;
+  margin: 0 auto;
+  display: block;
+}
+
+.btnSection:hover {
+  background: var(--primary);
+  background: linear-gradient(148deg, rgb(220, 5, 228) 20%, var(--secondary) 80%);
+  box-shadow: var(--secondary) 4px 4px 29px 1px;
+}
+
+.titleBeneficiariesGenerals {
+  text-align: center;
+  color: var(--primary); 
+}
+
+.iconSection {
+  display: block;
+  font-size: 28px;
+  margin: 0 auto;
+  margin-bottom: 10px;
+  margin-top: 30px;
+}
+
+.iconSection > path {
+  stroke: var(--secondary600)
+}
+
+.imageSection {
+  display: block;
+  margin: 0 auto;
+  width: 80px;
+  margin-top: 25px;
+}
+
+.iconSectionDev {
+  display: block;
+  font-size: 28px;
+  margin: 0 auto;
+  margin-bottom: 10px;
+  margin-top: 30px;
+  color: var(--secondary600); 
+}
+
+
+@media (max-width:800px) {
+  .titleSection {
+    font-size: 2rem;
+  }
+
+  .sectionContent {
+    margin-top: 8em;
+  }
+}

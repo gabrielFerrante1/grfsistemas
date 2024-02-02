@@ -1,0 +1,130 @@
+.toggle {
+    display: none;
+}
+
+.toggle + label {
+    display: inline-block;
+    position: relative;
+    box-shadow: inset 0 0 0px 1px #d5d5d5;
+    height: 25px;
+    width: 60px;
+    border-radius: 20px;
+}
+
+.toggle + label:before {
+    content: "";
+    display: block;
+    height: 25px;
+    width: 10px;
+    border-radius: 30px;
+    
+    transition: 0.1s ease-in-out;
+}
+
+.toggle + label:after {
+    content: "";
+    position: absolute;
+    height: 25px;
+    width: 30px;
+    top: 0;
+    left: 0px;
+    border-radius: 30px;
+    background: rgb(255, 255, 255);
+    box-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.2), 0 2px 4px rgba(0, 0, 0, 0.2);
+    transition: 0.1s ease-in-out;
+}
+
+.toggle:checked  + label:before {
+    width: 50px;
+    background-image:url('/imgs/night-mode.png');
+    background-position: 20% center;
+    background-repeat: no-repeat;
+    background-size: 20px 20px; 
+    background-color: var(--primary);
+}
+ 
+
+.toggle  + label  {
+    background-image:url('/imgs/brightness.png');
+    background-position: 85% center;
+    background-repeat:  no-repeat;
+    background-size: 20px 20px;
+    
+}
+
+.toggle + label:after {
+    left:0px;
+    box-shadow: inset 0 0 0 1px var(--primary), 0 2px 4px rgba(0, 0, 0, 0.2); 
+}
+
+.toggle:checked + label:after {
+    left: 30px;
+    box-shadow: inset 0 0 0 1px var(--secondary), 0 2px 4px rgba(0, 0, 0, 0.2); 
+} 
+
+ .toggle2 {
+    display: none;
+}
+
+ .toggle2 + label {
+    display: inline-block;
+    position: relative;
+    box-shadow: inset 0 0 0px 1px #d5d5d5;
+    height: 25px;
+    width: 60px;
+    border-radius: 20px;
+}
+
+ .toggle2 + label:before {
+    content: "";
+    display: block;
+    height: 25px;
+    width: 10px;
+    border-radius: 30px;
+  
+    transition: 0.1s ease-in-out;
+}
+
+ .toggle2 + label:after {
+    content: "";
+    position: absolute;
+    height: 25px;
+    width: 30px;
+    top: 0;
+    left: 0px;
+    border-radius: 30px;
+    background: rgb(255, 255, 255);
+    box-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.2), 0 2px 4px rgba(0, 0, 0, 0.2);
+    transition: 0.1s ease-in-out;
+}
+
+ .toggle2  + label:before {
+    width: 50px;
+    background-image:url('/imgs/night-mode.png');
+    background-position: 20% center;
+    background-repeat: no-repeat;
+    background-size: 20px 20px; 
+    background-color: var(--primary);
+} 
+
+ .toggle2:checked  + label:before {
+    width: 0;
+    background-color: white;
+}
+
+ .toggle2  + label  {
+    background-image:url('/imgs/brightness.png');
+    background-position: 85% center;
+    background-repeat:  no-repeat;
+    background-size: 20px 20px;
+}
+
+ .toggle2 + label:after {
+    left: 30px;
+    box-shadow: inset 0 0 0 1px var(--secondary), 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+ 
+ .toggle2:checked + label:after {
+    left: 0px;
+    box-shadow: inset 0 0 0 1px var(--secondary), 0 2px 4px rgba(0, 0, 0, 0.2);
+}

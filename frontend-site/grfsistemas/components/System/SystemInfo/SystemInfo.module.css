@@ -1,0 +1,129 @@
+.infoHeader > h3 {
+    color: var(--primary);
+    word-break: break-all; 
+}
+ 
+ 
+.infoHeaderCategory {
+    color: var(--secondary300);
+    font-weight: 500;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 90%; 
+}
+
+.infoHeaderRate {
+    font-size: 16px;
+    color: var(--primary);
+}
+
+.infoHeaderRateText {
+    margin-top: -2px;
+    font-size: 13.5px;
+    color: var(--colorText);
+    opacity: 0.6;
+    margin-left: 5px;
+}
+
+.infoHeaderRateText > span {
+    text-transform: lowercase;
+    margin-left: 3px;
+}
+
+.infoHeaderSealNew {
+    background: var(--secondary);
+    border: 2px dotted var(--primary);
+    font-size: 13px;
+    font-weight: 500;
+    border-radius: 4px;
+    padding: 1px 5px;
+    color: var(--primary); 
+}
+
+.infoPlan {
+    margin-top: 7%; 
+}
+
+.infoPlan > h4 { 
+    color: var(--secondary300);
+    display: flex;
+}
+
+.infoPlanDivisorPrice { 
+    color: var(--primary);
+    font-size: 17px;
+    align-self: center;
+    margin: 0 2px -3px 3px; 
+}
+
+.infoPlanPricePlan {
+    color: var(--primary);
+    font-size: 14px;
+    align-self: flex-end;
+    margin-bottom: 3px;
+    text-transform: capitalize;
+}
+
+.infoPlanSelectPlan {
+    width: 100%; 
+    border: 1px solid var(--primary); 
+    color: var(--secondary600);
+    border-radius: 2px;
+}
+
+.infoPlanButtonCart {
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    margin-top: 30px;
+    width: 100%;
+    border: none;
+    background-color: var(--primary);
+    padding: 6px 7px;
+    color: var(--secondary);
+    outline: none;
+    transition: all 0.4s;
+    -webkit-transition: all 0.4s;
+    -moz-transition: all 0.4s;
+    -o-transition: all 0.4s;
+}
+
+.infoPlanButtonCart:hover {
+    background-color: var(--secondary);
+    color: var(--primary);
+}
+ 
+.infoRecentPurchase {
+    margin: 35px 0 -21px 0;
+    display: flex;
+    color: var(--colorText300);
+} 
+
+.infoRecentPurchaseIcon {
+    font-size: 17px;
+}
+
+.infoRecentPurchase > span {
+    align-self: center;
+    font-size: 14px;
+    margin-top: -2.5px;
+    margin-left: 10px;
+    color: var(--colorText300);
+}
+
+@media (max-width: 989px) {
+    .infoHeader {
+        margin-top: 12px;
+    }
+
+    .infoPlan {
+        margin-top: 30px;
+    }
+}
+
+@media (max-width: 440px) { 
+    .infoDeveloperForCompanieName {
+        width: 40%;
+    }
+} 

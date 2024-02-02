@@ -1,0 +1,126 @@
+.cardSystem {
+    background-color: var(--background);
+    padding: 0px 10px 18px 10px; 
+    border-radius: 5px;
+    margin-bottom: 60px; 
+    animation: animation-shadow-card 3.5s;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+
+    -webkit-animation: animation-shadow-card 3.5s;
+    -webkit-animation-direction: alternate;
+    -webkit-animation-iteration-count: infinite;
+
+    -o-animation: animation-shadow-card 3.5s;
+    -o-animation-direction: alternate;
+    -o-animation-iteration-count: infinite;
+
+    -moz-animation: animation-shadow-card 3.5s;
+    -moz-animation-direction: alternate;
+    -moz-animation-iteration-count: infinite;
+}
+
+.cardImage > img {
+    display: block;
+    width: 90%;
+    height: 180px;
+    margin: 0 auto;
+    cursor: pointer;
+}
+
+.cardInfo > h2 {
+    text-align: center;
+    color: var(--primary);
+    font-family: 'GRF-Bonita';
+    font-weight: bold; 
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    width: 100%;
+    margin-top: -10px;
+    cursor: pointer;
+}
+
+.cardInfo > p {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    width: 100%;
+    margin-top: 10px;
+    text-align: center;
+    font-family: 'GRF-Moderna';
+    color: var(--secondary600);
+}
+
+.cardInfo > h5 {  
+    display: flex;
+    justify-content: center;
+    color: var(--secondary600); 
+}
+
+.cardInfoSpanPrice{
+    color: var(--primary);
+    font-size: 13.5px;
+    align-self: flex-end;
+    margin-bottom: 2px;
+    text-transform: capitalize;
+}
+
+.cardInfoSpanDivisor { 
+    color: var(--primary);
+    font-size: 17px;
+    align-self: center;
+    margin: 0 2px 0 4px;
+}
+
+.cardButton {
+    display: block;
+    background-color: var(--secondary);
+    border: 1px solid var(--primary);
+    margin: 17px auto 0 auto;
+    padding: 3.5px 16px; 
+    color: var(--primary);
+    font-weight: 500;
+    font-size: 15px;
+    border-radius: 2px;
+    transition: all 0.4s;
+    -moz-transition: all 0.4s;
+    -o-transition: all 0.4s;
+    -webkit-transition: all 0.4s;
+}
+
+
+.cardButton:hover {
+    background-color: var(--primary);
+    color: var(--secondary);
+    border-color: var(--secondary);
+    border-radius: 3px;
+    transform: scale(1.1);
+}
+
+.cardSeals {
+    position: relative;
+    display: flex;
+    justify-content: right; 
+    top: 7px;
+}
+
+.cardSealNew {
+    background-color: var(--secondary);
+    padding: 1.5px 9px;
+    font-size: 13.5px;
+    font-weight: 600;
+    border: 2px dotted var(--primary);
+    border-radius: 3px;
+    color: var(--primary); 
+}
+
+@keyframes animation-shadow-card {
+    from {
+        box-shadow: var(--primary) 1px 9px 26px -5px;
+    }
+
+    to {
+        box-shadow: var(--secondary300) 1px 9px 26px -5px;
+    }
+} 

@@ -1,0 +1,68 @@
+#cookieModal {
+    position: fixed;
+    bottom: 10px;
+    background-color: var(--background);
+    left: 20%; right: 21%;
+    z-index: 100;
+    padding: 10px;
+    border: 1px solid var(--secondary300);
+    border-radius: 10px;
+    max-width: 1400px;
+}
+
+#cookieModal > p {
+    color: var(--primary);
+    font-weight: 500;
+}
+
+#cookieModal > span {
+    cursor: pointer;
+    color: rgb(0, 98, 255);
+    font-weight: 500;
+    transition: all 0.3s;
+}
+
+#cookieModal > span:hover{
+    cursor: pointer;
+    color: var(--secondary300);
+    font-weight: 500;
+}
+
+#cookieModal > button {
+   float: right;
+   background: var(--secondary300);
+   color: black; 
+   border: 1px solid var(--primary);
+   padding: 3px 6px;
+   border-radius: 5px;
+}
+
+#cookieModal > button:hover {
+   background-color: var(--secondary);
+}
+
+@media (max-width: 560px) {
+    #cookieModal {
+        left: 0;
+        right: 0;
+        bottom: 0;
+        border-bottom:none;
+        border-left: none;
+        border-right: none;
+        border-radius: 0;
+    }
+}
+
+@media (min-width: 1900px) {
+    #cookieModal {
+        left: 25%;
+        right: 25%;
+    }
+}
+
+@media (max-width: 320px) {
+    
+    #cookieModal > span {
+        display: none;
+    }
+}

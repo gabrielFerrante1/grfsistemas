@@ -1,0 +1,58 @@
+.commentItem {
+    margin-bottom: 31px;
+}
+
+.commentItemInfo {
+    display: flex; 
+}
+
+.commentItemInfo > span {
+    align-self: flex-start;
+    color: var(--colorText);
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 70%; 
+    margin-left: 5px;
+    font-size: 15.5px;
+    color: var(--primary);
+    font-weight: 500;
+}
+
+.commentItemInfo > span > small {
+    color: var(--colorText600);
+    margin-left: 5px;
+    font-weight: 400;
+}
+
+.commentItemInfoRating {
+    margin: -22px 0 0 50px; 
+}
+
+.commentItemInfoRatingStars {
+    font-size: 15px;
+}
+
+.commentItemContentLike {
+    display: flex;
+}
+ 
+.commentItemLikeIcon {
+    font-size: 17px;
+    color: var(--colorText300);
+}
+
+.commentItemDislikeIcon {
+    font-size: 17px;
+    margin-left: 18px;
+    color: var(--colorText300);
+}
+
+.commentItemIconText {
+    align-self: center;
+    font-size: 13px;
+    margin-top: -2.8px;
+    margin-left: -2px;
+    font-weight: 600;
+    color: var(--colorText300);
+}

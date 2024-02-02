@@ -1,0 +1,109 @@
+.header {
+    display: flex;
+    margin-top: 5px;
+}
+
+.headerName {
+    align-self: flex-start;
+    margin-left: 5px;
+    font-size: 15px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 80%;
+    color: var(--colorText);
+    margin-top: 5px;
+}
+
+.headerVerifiedIcon {
+    align-self: flex-start;
+    font-size: 16px;
+    margin-left: 12px;
+    color: rgb(21, 111, 255);
+    margin-top: 8.5px;
+}
+
+.headerRateDiv {
+    display: flex;
+    margin: -12px 0 0 46px;
+}
+
+.headerRate {
+    font-size: 14px;
+    color: var(--primary);
+}
+
+.headerRateText {
+    margin-top: -2px;
+    font-size: 12.1px;
+    color: var(--colorText);
+    opacity: 0.6;
+    margin-left: 5px;
+} 
+
+.headerRateText > span {
+    text-transform: lowercase;
+    margin-left: 3px;
+}
+
+.divisorLine { 
+    width: 54%;
+    border-bottom: 1px solid var(--colorLineVerticalNavBar);
+    margin: 10px auto 0 auto;
+}
+
+.numbersCol {
+    display: flex; 
+    justify-content: center; 
+} 
+
+.numbersColBorderLeft { 
+    border-left: 1px solid var(--colorLineVerticalNavBar); 
+}
+
+.numbersColBody {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.numbersColBodyNumber {
+    color: var(--secondary600);
+    font-weight: 600;
+    font-size: 17.5px;
+}
+
+.numbersColBodyText {
+    margin-top: 3px;
+    color: var(--primary);
+    font-size: 14.7px;
+}
+
+.headerDescription {
+    margin-top: 25px;
+}
+
+.headerDescription > span { 
+  font-weight: 600;
+  color: var(--primary);
+}
+
+.headerDescriptionDiv {
+    margin: 3px 0 0 7px;
+    color: var(--colorText); 
+    word-break: break-all;
+} 
+
+@media (max-width: 660px) {
+    .headerName {
+        max-width: 60%;
+    } 
+}
+
+@media (max-width: 768px) {
+    .numbersColBorderLeft {
+        border-left: none;
+        border-top: 1px solid var(--colorLineVerticalNavBar);
+        padding: 10px 0;
+    }
+}

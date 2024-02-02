@@ -1,0 +1,73 @@
+.title { 
+    color: var(--primary);
+    font-weight: 700;
+    margin-bottom: 0px;
+    margin-top: 10px;
+}
+
+.titleDescription {
+    display: block;
+    margin-bottom: 20px;
+    color: var(--colorText300);
+}
+
+.card {
+    background: var(--background);
+    border: 1px solid var(--grayLight);
+    padding: 16px 13px;
+    margin-bottom: 90px;
+}
+
+.paymentBtn {
+    background: transparent;
+    width: 100%;
+    border: 1px solid var(--primary);
+    border-radius: 20px;
+    transition: all 0.4s;
+}
+
+.noPaymentBtn {
+    width: 100%;
+    display: flex;
+    background: transparent; 
+    border: 1px solid var(--primary);
+    border-radius: 20px;
+    transition: all 0.4s;
+    padding: 8px;
+    font-weight: 600;
+    font-size: 14px;
+    align-items: center;
+    justify-content: center;
+    color: var(--colorText300);
+}
+
+.noPaymentBtnIcon {
+    font-size: 18px;
+    margin-right: 7px;
+}
+
+.paymentBtn:hover,
+.noPaymentBtn:hover  { 
+    box-shadow: 5px 17px 20px -17px var(--primary);
+}
+
+.paymentBtnIcon {
+    width: 85px;
+    height: 37px;
+}
+
+.loadingProgress {
+    height: 3px;
+    background-color: rgba(147, 43, 245, 0.307);
+}
+
+.loadingProgress > span {
+    background: var(--primary);
+}
+
+.textNoPaymentRequired {
+    color: var(--colorText300);
+    margin: 10px 6px;
+    text-align: center;
+    display: block;
+}

@@ -1,0 +1,39 @@
+.notFoundApp {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 40px 0 40px 0;
+}
+
+.notFoundInfo {
+    display: flex;
+    flex-direction: column;
+}
+
+.notFoundInfoImage {
+    width: 220px; 
+}
+
+.notFoundInfoText {
+    margin: 32px 0 ;
+    color: var(--primary); 
+    font-size: 19px;
+    display: block;
+    text-align: center;
+}
+
+.notFoundInfoButton {
+    display: block;
+    width: 51%;
+    margin: 0 auto;
+    padding: 5px 4px;
+    background-color: transparent;
+    color: var(--primary);
+    border: 1px solid var(--secondary);
+    font-weight: 500;
+    transition: all 0.4s;
+}
+
+.notFoundInfoButton:hover {
+    background-color: var(--secondary300);
+}

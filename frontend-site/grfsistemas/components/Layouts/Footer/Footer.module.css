@@ -1,0 +1,32 @@
+div .titleFooter  {
+    color: var(--colorText); 
+}
+
+.textFooter {
+    margin-top: 10px;
+    color: var(--colorText300);
+}
+
+.linkFooter {
+    cursor: pointer;
+    color: var(--primary);
+    transition: all 0.2s;
+}
+
+
+.linkFooter:hover { 
+    color: var(--secondary); 
+}
+
+.allRightFooter {
+    color: var(--colorText)
+}
+
+.linkPolitice {
+    color: var(--colorText);
+    cursor: pointer;
+}
+
+.linkPolitice:hover {
+    color: var(--primary); 
+}

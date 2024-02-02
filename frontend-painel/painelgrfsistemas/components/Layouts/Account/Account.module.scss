@@ -1,0 +1,28 @@
+.accountLogged {
+    display: flex;
+    align-items: center; 
+    cursor: pointer;
+    
+    .avatar {
+        width: 33.5px;
+        height: 33.5px;
+    }
+
+    .name {
+        display: block;
+        margin: 0 0 0 10px;
+        white-space: nowrap;
+        max-width: 120px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        color: var(--colorText300);
+        user-select: none;
+    }
+
+    .iconDropdown {
+        color: var(--colorText300);
+        margin-top: 3px;
+        font-size: 18px;
+    }
+}
+

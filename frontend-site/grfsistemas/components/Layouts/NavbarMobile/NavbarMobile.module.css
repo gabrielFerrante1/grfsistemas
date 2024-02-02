@@ -1,0 +1,47 @@
+.logo {
+    cursor: pointer;
+}
+
+.logo > img {
+    width: 200px;
+    height: 80px;
+}
+
+.btnMobileMenu {
+    font-size:33px;
+    margin:0 0 10px 10px;
+}
+
+.btnMobileMenu > path {
+    stroke: var(--colorText);
+}
+
+.menuMobileList {
+    list-style: none;
+    padding: 0 0 0 10px; 
+}
+
+.menuMobileList > li {
+    margin-bottom: 10px;
+}
+
+.menuMobileList > li > span{ 
+    font-weight: 600;
+    font-size: 16px;
+    cursor: pointer;
+    text-decoration: none; 
+    transition: all 0.2s;
+    -moz-transition: all 0.2s;
+    -o-transition: all 0.2s;
+    -webkit-transition: all 0.2s;
+    border-bottom: 2px solid transparent;
+    color: var(--colorText);
+} 
+
+.linkMenuMobileActive {
+    color: blueviolet !important;
+}
+
+.menuMobileList > li > a:hover{
+    color: var(--primary);
+}

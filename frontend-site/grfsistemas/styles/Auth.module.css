@@ -1,0 +1,78 @@
+.iconAuth {
+    display: block;
+    margin: 0 auto;
+    font-size: 34px;
+    color: var(--colorText300);
+}
+
+.titleAuth {
+    color: var(--secondary300);
+    font-weight: 500;
+    font-family: 'Grf-Moderna';
+    text-align: center;
+    font-size: 26px;
+    margin-top: 10px;
+}
+
+.btnAuth {
+    margin-top: 25px;
+    background: var(--primary); 
+    width: 100%;
+    padding: 7px 12px;
+    border: none;
+    color: var(--secondary);
+    font-weight: 500;
+    transition: all 0.4s;
+}
+
+.btnAuth:hover {
+    background-color: var(--secondary);
+    color: var(--primary);
+    box-shadow: 5px 17px 20px -15px var(--primary);
+}
+
+.btnAuthDisabled {
+    opacity: 0.8;
+    margin-top: 25px;
+    background: var(--primary); 
+    width: 100%;
+    padding: 7px 12px;
+    border: none;
+    color: var(--secondary);
+    font-weight: 500;
+}
+
+.btnAuthSocial {
+    background: transparent; 
+    width: 100%;
+    padding: 7px 12px;
+    border: 1px solid var(--colorLineVerticalNavBar);
+    color: var(--primary);
+    font-weight: 500;
+    transition: all 0.4s;
+}
+
+.btnAuthSocial:hover {
+    border-color: transparent;
+    background-color: var(--secondary);
+    color: var(--primary);
+    box-shadow: 5px 17px 20px -15px var(--primary);
+}
+
+.btnAuthSocialIcon {
+    width: 25px;
+    margin-right: 10px;
+}
+
+.textPasswordReset {
+    display: block;
+    text-align: center;
+    margin-top: 20px;
+    color: var(--colorText);
+}
+
+.textPasswordReset > a {
+    color: var(--primary);
+    font-weight: 600;
+    margin-left: 5px; 
+}

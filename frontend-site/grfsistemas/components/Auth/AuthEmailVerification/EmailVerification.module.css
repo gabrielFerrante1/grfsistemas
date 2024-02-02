@@ -1,0 +1,43 @@
+.title {
+    color: var(--primary);
+}
+
+.body {
+    border-top: 1px solid var(--grayLight);
+    border-bottom: 1px solid var(--grayLight);
+    margin: 10px 12px 0 12px;
+    padding: 9px 8px;
+    color: var(--colorText300);
+}
+
+.btnConfirm {
+    margin-left: 15px;
+    border-radius: 6px;
+    background-color: var(--primary);
+    color: var(--secondary);
+    border: 1px solid var(--primary);
+    padding: 5px 11px;
+    transition: all 0.5s;
+}
+
+.btnConfirm:hover {
+    background-color: var(--secondary);
+    color: var(--primary); 
+    border-color: var(--secondary);
+}
+
+.loadingEmail {
+    margin-left: 20px;
+    color: rgb(0, 47, 255); 
+    cursor: not-allowed;
+}
+
+.resendEmail {
+    margin-left: 20px;
+    color: rgb(0, 47, 255);
+    cursor: pointer;
+}
+
+.resendEmail:hover {
+    color: rgb(1, 1, 227);
+}

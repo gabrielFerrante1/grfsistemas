@@ -1,0 +1,28 @@
+.systemApp {
+    background: var(--background100);
+    transition: all 0.3s;
+    padding: 20px 30px; 
+}
+
+.alertPlanFreeRow {
+    background: var(--background);
+    margin: 0px 0px 15px 0px;
+    padding: 7px 0px 0px 6px ;
+}
+
+
+.systemAppRow1 {
+    background-color: var(--background);
+    border-radius: 1px;
+    padding: 15px 10px 15px 21px;
+    transition: all 0.4s;
+    max-width: 1500px;
+    margin: 0 auto;
+} 
+
+@media (max-width: 660px) {
+    .systemApp {
+        padding: 20px 5px;
+    }
+    
+}

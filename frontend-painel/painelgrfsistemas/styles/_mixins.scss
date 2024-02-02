@@ -1,0 +1,11 @@
+@mixin container-page {
+    margin-top: 20px;
+    padding: 0px 50px;
+
+    @media (max-width: 768px) {
+        & { 
+            padding: 0px 2px 0px 15px;
+        }
+    }
+}
+

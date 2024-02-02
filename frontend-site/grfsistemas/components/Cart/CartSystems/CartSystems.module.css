@@ -1,0 +1,133 @@
+.title { 
+    color: var(--primary);
+    font-weight: 700;
+    margin-bottom: 20px;
+    margin-top: 10px;
+}
+
+.systems404 {
+    display: flex; 
+    align-items: center;
+    justify-content: center;
+    height: 280px;
+    flex-direction: column;
+}
+
+.systems404 > small {
+    text-align: center;
+    color: var(--primary);
+}
+
+.systems404 > button {
+    background: transparent;
+    border: 1px solid var(--secondary300);
+    color: var(--primary);
+    font-size: 13.5px;
+    font-weight: 500;
+    margin-top: 20px;
+    padding: 3px 9px;
+    transition: all 0.4s;
+}
+
+.systems404 > button:hover {
+    background-color: var(--primary);
+    color: var(--secondary)
+}
+
+.card {
+    background: var(--background);
+    border: 1px solid var(--grayLight);
+}
+ 
+
+.planContent {
+    border-bottom: 1px solid var(--colorLineVerticalNavBar);
+    padding: 5px 20px 15px 20px;
+    margin: 12px 0;
+}
+
+.plan {
+    display: flex; 
+}
+
+.planInfo {
+    display: flex;
+    flex-direction: column;
+    margin-left: 10px;
+    align-self: center;
+    flex: 1;
+}
+
+.planImage {
+    width: 60px;
+}
+ 
+.planInfoName { 
+   color: var(--primary);
+   cursor: pointer; 
+   transition: all 0.3s;
+   word-break: break-all;
+}
+ 
+.planInfoName:hover {
+    color: var(--secondary300);
+}
+ 
+
+.planInfoNamePlan {
+   margin-top: -1px;
+   font-size: 13px;
+   color: var(--colorText300);
+}
+
+.planInfoTrashIcon {
+    margin-left: 6px;
+    font-size: 19px;
+    cursor: pointer;
+    color: var(--secondary600);
+    transition: all 0.3s;
+}
+
+.planInfoTrashIcon:hover {
+    color: var(--secondary);
+}
+
+.planPrice {  
+    align-self: center;
+    color: var(--colorText); 
+}
+
+.alterPlan {
+    display: flex;
+    margin-top: 12px;
+}
+
+.alterPlanSelectPlan { 
+    display: block;
+    width: 100%;
+    border: 1px solid var(--primary); 
+    color: var(--secondary600);
+    border-radius: 2px;
+    font-size: 13px;
+    padding: 0.5px 0px; 
+}
+
+.alterPlanText {
+    font-size: 15px;
+    color: var(--primary);
+}
+
+.btnNextStep {
+    background: var(--primary);
+    float: right;
+    margin-top: 20px; 
+    padding: 5px 20px;
+    color: var(--secondary);
+    transition: all 0.4s;
+    border: none;
+}
+
+.btnNextStep:hover {
+    background: var(--secondary300);
+    color: var(--primary);
+}

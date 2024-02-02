@@ -1,0 +1,54 @@
+.sidebar { 
+    background-color: var(--backgroundNav);
+    transition: all 0.5s;
+    border-right: 1px solid var(--gray); 
+}
+
+.listLinks {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    padding: 0 0; 
+    flex-direction: column;
+    align-items: center; 
+
+    & > .liLink {
+        display: flex;
+        cursor: pointer;
+        padding: 14px 19px; 
+        width: 100%;
+        justify-content: justify;
+
+        &:hover {
+            background: rgba(192, 190, 190, 0.174)
+        }
+    }
+
+    & > .liToggleSidebar { 
+        bottom: 0;
+        position: absolute;
+        cursor: pointer;
+        padding: 8px 16px;
+        margin-bottom: 10px; 
+
+        &:hover svg { 
+            color: var(--secondary600)
+        }
+ 
+    }
+}
+
+.icon {
+    font-size:  24px;
+    color: var(--primary);
+}
+
+.itemMenu {
+    display: flex;
+    align-items: center;
+}
+
+.itemMenuText {
+    margin-left: 10px;
+    color: var(--colorText300) !important;
+} 

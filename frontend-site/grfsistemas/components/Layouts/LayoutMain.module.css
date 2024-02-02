@@ -1,0 +1,21 @@
+#headerApp {
+    padding: 0; 
+    transition: all 0.4s; 
+}
+
+.navBarMobile {
+    padding: 1px 0px 1px 0px;
+    border-bottom: 1px solid var(--colorLineNavBar);
+}
+
+#footerApp {
+    border-top: 1px solid var(--colorLineNavBar);
+    padding: 20px 10px 36px 10px;
+    transition:all 0.5s
+}
+
+@media (max-width: 999px) {
+    #footerApp {
+        text-align: center;
+    }
+}

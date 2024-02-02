@@ -1,0 +1,9 @@
+@import '../styles/mixins';
+
+.tituloPage {
+    color: var(--primary);
+}
+
+.containerPage {
+    @include container-page;
+}

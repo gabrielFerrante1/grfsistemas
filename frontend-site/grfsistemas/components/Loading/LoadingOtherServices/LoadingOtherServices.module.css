@@ -1,0 +1,65 @@
+#loadApp {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    bottom: 0;
+    top: 0;
+    z-index: 100;
+    background: var(--background);
+    display: flex;
+    justify-content: center;
+    align-items:center; 
+    flex-direction: column;
+}
+
+.mainx {
+    /* Parent should have position set to relative for not distubing the height when the loading bar is hidden */
+    position: relative;      /* Parent width will be the width of the loading bar */
+    width: 170px; 
+    margin-top: 5px;
+    margin-bottom: 12px;
+    margin-right: 5px;
+}
+  
+.loadingBarContainer {
+    height: 2px;
+    width: 100%;
+    background-color: #cfdbf0;
+    position: absolute;
+    overflow: hidden; 
+}
+  
+.loadingBar {
+    height: 100%;
+    width: 49%; 
+    position: absolute;
+    left: -50%;
+    animation: loading 2s ease-in 0.5s infinite;
+}
+
+.loadingText {
+    color: var(--colorText300);
+}
+
+@keyframes loading {
+   0% {
+        transform:translateX(0);
+        background-color: #ffbb00;
+   }
+   20% {
+        background-color: #e5a800;
+   }
+   50% {
+        background-color: #f0b102;
+   }
+   80% {
+        background-color: #ffbb00;
+   }
+
+   to {
+    transform:translateX(400%);
+   
+   }
+}
+
+ 

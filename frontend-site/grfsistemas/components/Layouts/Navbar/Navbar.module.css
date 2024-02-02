@@ -1,0 +1,118 @@
+#navApp {
+    display: flex;
+    flex-direction: row;
+    padding: 0px 70px 0px 80px;
+    border-bottom: 1px solid var(--colorLineNavBar);
+}
+
+.logo {
+    flex-grow: 1;
+}
+
+.logo img{
+    height: 90px;
+    width: 230px;
+    cursor: pointer;
+}
+
+.itemMenu { 
+    align-self: center;
+    flex-grow: 0.5; 
+    font-weight: 600;
+    font-size: 16px;
+}
+ 
+.itemMenu3 {
+    align-self: center;
+    flex-grow: 1.8;
+    font-weight: 600;
+    font-size: 16px;
+}
+
+.linkMenu {
+    cursor: pointer;
+    text-decoration: none;
+    color: var(--colorText);
+    transition: all 0.2s;
+    -moz-transition: all 0.2s;
+    -o-transition: all 0.2s;
+    -webkit-transition: all 0.2s;
+    border-bottom: 2px solid transparent;
+}
+
+.linkMenu:hover, .iconMenu1:hover, .iconMenu2:hover {
+    color: var(--primary); 
+}
+
+
+.linkMenuActive {
+    cursor: pointer;
+    text-decoration: none;
+    color: var(--primary);
+    transition: all 0.2s;
+    -moz-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    -webkit-transition: all 0.3s;
+    border-bottom: 2px solid var(--secondary);
+}
+
+.divIconMenu {
+    align-self: center;
+    flex-grow: 0.1;
+}
+
+.iconMenu1 {
+    font-size: 25px;
+    color: var(--colorText);
+    transition: all 0.2s;
+    -moz-transition: all 0.2s;
+    -o-transition: all 0.2s;
+    -webkit-transition: all 0.2s;
+    cursor: pointer;
+}
+
+.iconMenu2 {
+    font-size: 25px;
+    color: var(--colorText);
+    margin-bottom: 0.9px;
+    transition: all 0.2s;
+    -moz-transition: all 0.2s;
+    -o-transition: all 0.2s;
+    -webkit-transition: all 0.2s;
+    cursor: pointer;
+}
+
+.iconMenuActive {
+    font-size: 25px;
+    color: var(--primary)
+}
+
+.linhaVertical {
+    height: 23px; 
+    border-left: 2px solid var(--colorLineVerticalNavBar); 
+    align-self: center;
+    margin-right: 1.2%;
+    margin-bottom: -1px;
+}
+
+.divLanguageSelect  {
+    align-self: center;
+    margin-right: 1.2%;
+    margin-top: 2px;
+}
+
+.divThemeSwitch {
+    align-self: center;
+    margin-top: 5px;
+}
+
+.themeSwitch {
+    color: var(--secondary); 
+    background-color: var(--primary); 
+}  
+
+@media (max-width:1198px) {
+    #navApp {
+      padding: 0px 20px 0px 0px;
+    }
+}
